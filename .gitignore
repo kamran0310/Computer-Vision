@@ -1,0 +1,19 @@
+# Ignore videos
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.flv
+
+# Ignore images
+*.jpg
+*.jpeg
+*.png
+*.bmp
+
+# Ignore compiled Python files and cache
+__pycache__/
+*.log
+*.csv
+*.npy
+
