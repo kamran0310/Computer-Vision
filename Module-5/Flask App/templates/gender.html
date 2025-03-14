@@ -16,7 +16,15 @@
                 </div>
             </form>
         </div>
-        <div class="col-8"></div>
+        <div class="col-8">
+            {% if fileupload %}
+            <br> <br>
+
+            <h3 class="display-8"> Predicted Image</h3>
+            <img src="/static/predict/prediction_image.jpg" class="image-fluid" alt="" width="500">
+
+            {% endif %}
+        </div>
         </div>
 
 
