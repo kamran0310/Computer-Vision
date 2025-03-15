@@ -2,6 +2,7 @@ from flask import render_template, request
 import os
 import cv2
 from app.face_recognition import faceRecognitionPipeline
+import matplotlib.image as matimg
 
 UPLOAD_FOLDER='static/upload'
 def index():
@@ -12,7 +13,6 @@ def app():
     return render_template('app.html')
 
 def genderapp():
-    
     if request.method=='POST':
         f=request.files['image_name']
         filename=f.filename 
